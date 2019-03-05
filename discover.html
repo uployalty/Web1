@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>discover</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container1">
+				<div id="title">
+					<div id="title-left">
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-no"></div>
+						<div id="title-contend">中国移动4G</div>
+						
+					</div>
+					<div id="title-center">
+						12:00
+					</div>
+					<div id="title-right">
+						<div>
+							87%
+						</div>
+						<div>
+							<div></div>
+						</div>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div id="header">
+					<div id="header-left">
+						<img src="img/返回.svg"/>
+						<span>
+							返回
+						</span>
+					</div>
+					<div id="header-center">
+						微信(10)
+					</div>
+					<div id="header-right">
+						<img src="img/加号.svg" onclick="showMenu()"/>
+						
+						<div id="header-right-menu">
+							<div id="t" onclick="showMenu()"/></div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/添加朋友.svg"/>
+								</div>
+								<div class="no12">
+									添加朋友
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/扫一扫.svg"/>
+								</div>
+								<div class="no12">
+									扫一扫
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/收付款.svg"/>
+								</div>
+								<div class="no12">
+									收付款
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/发起群聊.svg"/>
+								</div>
+								<div class="no12">
+									发起群聊
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chat">
+					
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/朋友圈.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div >朋友圈</div>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+						
+						<div class="chat-content" style="background: #ccc;width: 100%; height: 15px;">
+							
+						</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/扫一扫.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								扫一扫
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/摇一摇.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								摇一摇
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content" style="background: #ccc;width: 100%; height: 15px;">
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/看一看.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								看一看
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/搜一搜.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								搜一搜
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content" style="background: #ccc;width: 100%; height: 15px;">
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/附近的人.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								附近的人
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content" style="background: #ccc;width: 100%; height: 15px;">
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/购物.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								购物
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/游戏.svg"/>
+							
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								游戏
+							</div>
+						</div>
+						
+					</div>
+					<div class="chat-content" style="background: #ccc;width: 100%; height: 15px;">
+						
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/icon/dicovery/小程序.svg"/>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								小程序
+							</div>
+						</div>
+						
+					</div>
+				</div>
+		<div id="menu">
+					<div id="menu1" >
+						
+						
+							<a href="javascript:void(0);" onclick="window.open('chat.html','_self');" target="_blank" style="color: black;">
+								<div >
+									<img src="img/icon/menu/微信 图标-07.svg"/>
+								</div>
+							</a>
+							
+							<div>聊天</div>
+					</div>
+					<div id="menu2" >
+						
+						<a href="javascript:void(0);" onclick="window.open('friend.html','_self');" target="_blank" style="color: black;"><div >
+							<img src="img/menu/通讯录.svg"/>
+						</div></a>
+						<div>通讯录</div>
+					</div>
+					<div id="menu3" >
+						
+						<a href="javascript:void(0);" onclick="window.open('discover.html','_self');" target="_blank" style="color: black;"><div >
+							<img src="img/icon/menu/微信 图标-06.svg"/>
+						</div></a>
+						<div id="">
+							发现
+						</div>
+					</div>
+					<div id="menu4" >
+						
+						<a href="javascript:void(0);" onclick="window.open('me.html','_self');" target="_blank" style="color: black;"><div >
+							<img src="img/menu/me.svg" />
+						</div></a>
+						<div>我</div>
+					</div>
+				</div>
+		
+	</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>chat</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container1">
+				<div id="title">
+					<div id="title-left">
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-yes"></div>
+						<div class="signal signal-no"></div>
+						<div id="title-contend">中国移动4G</div>
+						
+					</div>
+					<div id="title-center">
+						12:00
+					</div>
+					<div id="title-right">
+						<div>
+							87%
+						</div>
+						<div>
+							<div></div>
+						</div>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div id="header">
+					<div id="header-left">
+						<img src="img/返回.svg"/>
+						<span>
+							返回
+						</span>
+					</div>
+					<div id="header-center">
+						微信(10)
+					</div>
+					<div id="header-right">
+						<img src="img/加号.svg" onclick="showMenu()"/>
+						
+						<div id="header-right-menu">
+							<div id="t" onclick="showMenu()"/></div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/添加朋友.svg"/>
+								</div>
+								<div class="no12">
+									添加朋友
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/扫一扫.svg"/>
+								</div>
+								<div class="no12">
+									扫一扫
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/收付款.svg"/>
+								</div>
+								<div class="no12">
+									收付款
+								</div>
+								
+							</div>
+							<div class="no1">
+								<div class="no11">
+									<img src="img/control/发起群聊.svg"/>
+								</div>
+								<div class="no12">
+									发起群聊
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="chat">
+					<div id="search">
+						<input type="text" name="search"   />
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/马化腾.png"/>
+							<span id="" class="tuoyuan">99+</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div>彭彭彭于晏</div>
+								<div style="color: #bf360c;">[语音]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">7:00</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/98584821697248341.jpg"/>
+							<span id="" class="tuoyuan">99+</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">欧时力特卖</div>
+								<div style="color:#9E9E9E">泰国代购：[图片]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">刚刚</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/71.jpg"/>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">狂野飙车</div>
+								<div style="color:#9E9E9E;">糖葫芦是一把小火苗：[动画表情]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:48</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/14.jpg"/>
+							<span id="">6</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">朕的爱情</div>
+								<div style="color: #9E9E9E;">你在哪呢</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:47</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/529878697324773929.jpg">1</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">阿翠-翠花</div>
+								<div style="color: #bf360c;">[语音]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:47</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/885489849958641029.png"/>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">文件传输助手</div>
+								<div style="color:#9E9E9E">[图片]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:49</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/java.png"/>
+							<span id="">1</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id=""></div>
+								<div style="color: #9E9E9E;">今天作业发到群里了</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:22</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/女孩03.jpg"/>
+							<span id="">1</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">小狄</div>
+								<div style="color: #9E9E9E;">小狄</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:46</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/奥巴马-01.jpg"/>
+							<span id="">3</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">奥巴马</div>
+								<div style="color: #9E9E9E;">我是奥巴马</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:21</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/女孩-01.jpeg"/>
+							<span id="">1</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div id="">睡不醒</div>
+								<div style="color: #bf360c;">[语音]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:45</div>
+					</div>
+					<div class="chat-content">
+						<div class="chat-content-img">
+							<img src="img/photo/女孩02.jpg"/>
+							<span id="">
+								1
+							</span>
+						</div>
+						<div class="chat-content-center">
+							<div id="">
+								<div style="color: #424242;">睡不醒</div>
+								<div style="color: #bf360c;">[语音]</div>
+							</div>
+						</div>
+						<div class="chat-content-time">6:10</div>
+					</div>
+				</div>
+		<div id="menu">
+					<div id="menu1" >
+						
+						
+							<a href="javascript:void(0);" onclick="window.open('chat.html','_self');" target="_blank" style="color: black;">
+								<div >
+									<img src="img/menu/聊天-press.svg"/>
+								</div>
+							</a>
+							<div>聊天</div>
+						
+					</div>
+					<div id="menu2" >
+						
+						<a href="javascript:void(0);" onclick="window.open('friend.html','_self');" target="_blank" style="color: black;">
+							<div >
+								<img src="img/menu/通讯录.svg"/>
+							</div>
+						</a>
+						<div>通讯录</div>
+					</div>
+					<div id="menu3" >
+						
+						<a href="javascript:void(0);" onclick="window.open('discover.html','_self');" target="_blank" style="color: black;">
+							<div >
+								<img src="img/menu/发现.svg" />
+							</div>
+						</a>
+						<div>发现</div>
+					</div>
+					<div id="menu4" >
+						
+						<a href="javascript:void(0);" onclick="window.open('me.html','_self');" target="_blank" style="color: black;">
+							<div >
+								<img src="img/menu/me.svg" />
+							</div>
+						</a>
+						<div>
+							我
+						</div>
+					</div>
+		</div>
+		
+	</body>
+</html>
